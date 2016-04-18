@@ -1,6 +1,6 @@
 # flexstyl
 ###### simpler flex syntax
-###### stylus simple-flex implementation
+###### stylus [simple-flex](https://github.com/simple-flex/simple-flex) implementation
 
 ## installation
 #### cdn - [flex.styl](https://npmcdn.com/flexstyl/flex.styl)
