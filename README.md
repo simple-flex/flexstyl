@@ -1,6 +1,6 @@
 # flexstyl
-#### simpler flex syntax
-#### stylus simple-flex implementation
+###### simpler flex syntax
+###### stylus simple-flex implementation
 
 
 ## installation
