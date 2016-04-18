@@ -18,3 +18,41 @@ npm i flexstyl # --save
 
 // just import flex.styl regardless whence
 ```
+
+```styl
+flex styl
+// display: flex;
+
+flex line
+// display: inline-flex;
+
+flex center
+/*
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+*/
+
+flex wrap
+// flex-wrap: wrap;
+
+flex column
+// flex-direction: column;
+
+justify end
+// justify-content: flex-end;
+
+justify around
+// justify-content: space-around;
+
+align start
+// align-items: flex-start;
+
+self auto
+// align-self: auto;
+
+flex grow
+// flex-grow: 1;
+
+```
+
