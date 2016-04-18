@@ -1,0 +1,20 @@
+line-align(value)
+  if value == 'start'
+    $align-content = 'flex-start'
+
+  if value == 'end'
+    $align-content = 'flex-end'
+
+  if value == 'center'
+    $align-content = 'center'
+
+  if value == 'between'
+    $align-content = 'space-between'
+
+  if value == 'around'
+    $align-content = 'space-around'
+
+  if value == 'stretch'
+    $align-content = 'stretch'
+
+  align-content $align-content

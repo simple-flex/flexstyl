@@ -1,70 +1,39 @@
-wrap(what)
-  if what == '1'
-    flex-wrap wrap
-  if what == '0'
-    flex-wrap nowrap
+@import 'src/line-align'
+@import 'src/direction'
+@import 'src/justify'
+@import 'src/align'
+@import 'src/wrap'
+@import 'src/self'
 
-  if what == 'true'
-    flex-wrap wrap
-  if what == 'false'
-    flex-wrap nowrap
-
-  if what == 'wrap'
-    flex-wrap wrap
-  if what == 'nowrap'
-    flex-wrap nowrap
-
-  if what == 'reverse'
-    flex-wrap  wrap-reverse
-
-justify(what)
-  if what == 'start'
-    justify-content flex-start
-  if what == 'center'
-    justify-content center
-  if what == 'end'
-    justify-content flex-end
-
-  if what == 'between'
-    justify-content space-between
-  if what == 'around'
-    justify-content space-around
-
-
-align(what)
-  if what == 'start'
-    align-items flex-start
-  if what == 'center'
-    align-items center
-  if what == 'end'
-    align-items flex-end
-
-  if what == 'stretch'
-    align-items stretch
-  if what == 'baseline'
-    align-items baseline
-
-flex(what)
-  if what == 'line'
-    display inline-flex
-  if what == 'styl'
+flex(value)
+  if value == 'styl'
     display flex
 
-  if what == 'center'
+  if value == 'line'
+    display inline-flex
+
+  if value == 'center'
+    line-align center
     justify center
     align center
 
-  if what == 'row'
-    flex-direction row
-  if what == 'column'
-    flex-direction column
-
-  if what == 'grow'
+  if value == 'grow'
     flex-grow 1
-  if what == 'nogrow'
+
+  if value == 'no-grow'
     flex-grow 0
 
-  if what == 'shrink'
+  if value == 'shrink'
     flex-shrink 1
-  if what == 'noshrink'
+
+  if value == 'no-shrink'
     flex-shrink 0
+
+  if value == 'baseline' || value == 'stretch'
+    align value
+
+  if value == 'between' || value == 'around'
+    justify value
+
+  direction value
+  wrap value
