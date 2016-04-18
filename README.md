@@ -1,7 +1,7 @@
 # flexstyl
-Flex helper for stylus
+#### simpler flex syntax
+#### stylus simple-flex implementation
 
-##### support for sass and less in the near future
 
 ## installation
 #### cdn - [flex.styl](https://npmcdn.com/flexstyl/flex.styl)
